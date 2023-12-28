@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import NavBar from "./Components/NavBar";
+import HomeSrceen from "./Pages/HomeScreen";
+import { COLORS } from "./GLOBAL";
+import AboutScreen from "./Pages/AboutScreen";
+import Footer from "./Components/Footer";
+import SkillsScreen from "./Pages/SkillsScreen";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<HomeSrceen />} />
+        <Route path="/about" element={<AboutScreen />} />
+        <Route path="/skills" element={<SkillsScreen />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }
-
 export default App;

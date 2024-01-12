@@ -1,16 +1,34 @@
 {
   "files": {
-    "main.css": "/sagharsahebi.github.io/static/css/main.f855e6bc.css",
-    "main.js": "/sagharsahebi.github.io/static/js/main.5087f4ba.js",
+    "main.css": "/sagharsahebi.github.io/static/css/main.86bd2d64.css",
+    "main.js": "/sagharsahebi.github.io/static/js/main.1d3b0184.js",
     "static/js/787.7da95b79.chunk.js": "/sagharsahebi.github.io/static/js/787.7da95b79.chunk.js",
-    "static/media/logo.svg": "/sagharsahebi.github.io/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/irespiteVideo.mp4": "/sagharsahebi.github.io/static/media/irespiteVideo.530fee9a1cc0a608509b.mp4",
+    "static/media/robot.mp4": "/sagharsahebi.github.io/static/media/robot.1b790dced54478c04477.mp4",
+    "static/media/pic2.png": "/sagharsahebi.github.io/static/media/pic2.1bc3ac0aa8d7aa4aea31.png",
+    "static/media/pic1.png": "/sagharsahebi.github.io/static/media/pic1.3463ca9feadfb679142c.png",
+    "static/media/work-office.svg": "/sagharsahebi.github.io/static/media/work-office.674801db0bf7c5235c867fbfd3d90a51.svg",
+    "static/media/EMSB.svg": "/sagharsahebi.github.io/static/media/EMSB.6a2f5876f16054571c316cd1ae3cfb57.svg",
+    "static/media/iRespite.svg": "/sagharsahebi.github.io/static/media/iRespite.5c93bae41d8b1d4568b89414864313b0.svg",
+    "static/media/girl-code.svg": "/sagharsahebi.github.io/static/media/girl-code.f3b4e16bc4bafbeb7439b3706fb7e9ed.svg",
+    "static/media/Mcgill.svg": "/sagharsahebi.github.io/static/media/Mcgill.ea9e7bde259bfa8d034bec46fdc63886.svg",
+    "static/media/swimming.svg": "/sagharsahebi.github.io/static/media/swimming.0bc754c69318eb3c68eb8fb0bba053b7.svg",
+    "static/media/postgresql.svg": "/sagharsahebi.github.io/static/media/postgresql.91b531804623a13649f930117e53ae34.svg",
+    "static/media/film-projector.svg": "/sagharsahebi.github.io/static/media/film-projector.69d8cd8efa2da12ac735c2a7aaa1facd.svg",
+    "static/media/codeJam.svg": "/sagharsahebi.github.io/static/media/codeJam.1da149a37abc7203575ac44e06f9ab55.svg",
+    "static/media/Thinking.svg": "/sagharsahebi.github.io/static/media/Thinking.2aec6b98d574086ebf13e8a636636577.svg",
+    "static/media/giro.svg": "/sagharsahebi.github.io/static/media/giro.025bfc512092f7514fb3925337a6324b.svg",
+    "static/media/swiftconnect.svg": "/sagharsahebi.github.io/static/media/swiftconnect.52cdca94e9e3c4f14046c3357ac42e45.svg",
+    "static/media/Web-server.svg": "/sagharsahebi.github.io/static/media/Web-server.7a4432de03bc3451f43243c3caa36241.svg",
+    "static/media/Ubisoft.svg": "/sagharsahebi.github.io/static/media/Ubisoft.6fb4940039c44e906a3955a0522cdb34.svg",
+    "static/media/robot.svg": "/sagharsahebi.github.io/static/media/robot.66ccd188ac649ea321bd551705f4dde0.svg",
     "index.html": "/sagharsahebi.github.io/index.html",
-    "main.f855e6bc.css.map": "/sagharsahebi.github.io/static/css/main.f855e6bc.css.map",
-    "main.5087f4ba.js.map": "/sagharsahebi.github.io/static/js/main.5087f4ba.js.map",
+    "main.86bd2d64.css.map": "/sagharsahebi.github.io/static/css/main.86bd2d64.css.map",
+    "main.1d3b0184.js.map": "/sagharsahebi.github.io/static/js/main.1d3b0184.js.map",
     "787.7da95b79.chunk.js.map": "/sagharsahebi.github.io/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.5087f4ba.js"
+    "static/css/main.86bd2d64.css",
+    "static/js/main.1d3b0184.js"
   ]
 }

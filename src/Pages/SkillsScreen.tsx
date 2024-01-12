@@ -87,7 +87,7 @@ const styles = {
   },
   title: {
     color: COLORS.White,
-    fontSize: "2vw",
+    fontSize: "1.9vw",
     fontFamily: "JetBrains Mono",
     fontWeight: "800",
     margin: 8,

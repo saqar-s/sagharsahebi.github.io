@@ -26,7 +26,6 @@ const AboutScreen = () => {
               aspectRatio: 1 / 1,
               position: "absolute",
               background: COLORS.DodgerBlue,
-              opacity: "70%",
               borderRadius: "50%",
             }}
           />
@@ -120,7 +119,7 @@ const AboutScreen = () => {
               aspectRatio: 1 / 1,
               position: "absolute",
               background: COLORS.DodgerBlue,
-              opacity: "70%",
+
               borderRadius: "50%",
             }}
           />

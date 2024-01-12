@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Container, Box } from "@mui/material";
+import { Box } from "@mui/material";
 import { COLORS } from "../GLOBAL";
 
 interface BoxContainerProps {
@@ -7,6 +7,7 @@ interface BoxContainerProps {
   width?: string;
   bgcolor: string | COLORS;
   children?: React.ReactNode;
+  customSx?: React.CSSProperties;
 }
 
 const BoxContainer: React.FC<BoxContainerProps> = ({
@@ -14,6 +15,7 @@ const BoxContainer: React.FC<BoxContainerProps> = ({
   width = "inherit",
   bgcolor,
   children,
+  customSx,
 }) => {
   return (
     <Box
@@ -27,10 +29,12 @@ const BoxContainer: React.FC<BoxContainerProps> = ({
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        ...customSx,
       }}
     >
       {children}
     </Box>
   );
 };
+
 export default BoxContainer;

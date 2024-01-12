@@ -1,13 +1,37 @@
-import React from "react";
+import React, { useState } from "react";
 import FooterWave from "./FooterWave";
-
 interface Styles {
   [key: string]: React.CSSProperties;
 }
 
 const Footer = () => {
+  const [hoveredLink, setHoveredLink] = useState("");
+
+  const handleMouseEnter = (link: string) => {
+    setHoveredLink(link);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredLink("");
+  };
+
+  const generateLinkStyle = (link: string) => ({
+    color: "rgba(255, 255, 255, 0.70)",
+    textDecoration: "none",
+    fontWeight: hoveredLink === link ? 600 : 400,
+    transition: "font-weight 0.3s",
+  });
+
+  const links = [
+    {
+      text: "LinkedIn",
+      url: "https://www.linkedin.com/in/saghar-sahebi-5628051b1/",
+    },
+    { text: "Github", url: "https://github.com/saqar-s" },
+    { text: "Facebook", url: "https://www.facebook.com/saghar.sahebi.7" },
+  ];
   return (
-    <div style={styles.footerContainer}>
+    <div style={{ ...styles.footerContainer }}>
       <div style={styles.footerContent}>
         <div style={{ ...styles.container, ...{ width: 170, left: 92 } }}>
           <span style={{ ...styles.text, ...styles.textMain }}>
@@ -19,9 +43,11 @@ const Footer = () => {
             <br />
             About
             <br />
-            Education
+            Skills
             <br />
             Experience
+            <br />
+            Education
             <br />
             Contact
           </span>
@@ -37,21 +63,27 @@ const Footer = () => {
           }}
         >
           <span style={{ ...styles.text, ...styles.textMain }}>
-            Social media
+            Social Media
             <br />
           </span>
           <span style={{ ...styles.text, ...styles.textSub }}>
-            LinkedIn
-            <br />
-            Website
-            <br />
-            Facebook
-            <br />
-            Instagram
+            {links.map((linkObject) => (
+              <React.Fragment key={linkObject.text}>
+                <a
+                  rel="noopener noreferrer"
+                  href={linkObject.url}
+                  style={generateLinkStyle(linkObject.text)}
+                  onMouseEnter={() => handleMouseEnter(linkObject.text)}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  {linkObject.text}
+                </a>
+                <br />
+              </React.Fragment>
+            ))}
           </span>
         </div>
       </div>
-      {/* <FooterWave style={styles.footerWave} /> */}
     </div>
   );
 };
@@ -86,6 +118,7 @@ const styles: Styles = {
     color: "rgba(255, 255, 255, 0.70)",
     fontSize: "16px",
     fontWeight: 400,
+    textDecoration: "none",
   },
   footerWave: {
     position: "absolute",

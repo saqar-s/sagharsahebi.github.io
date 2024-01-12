@@ -17,8 +17,7 @@ const SkillBox: React.FC<SkillBoxProps> = ({ text, icon, width = "80%" }) => {
           aspectRatio: 2.5 / 1,
           //height: "40%",
           position: "absolute",
-          background: "#3A92FA",
-          opacity: "70%",
+          background: COLORS.DodgerBlue,
           borderRadius: 25,
         }}
       />
@@ -29,7 +28,7 @@ const SkillBox: React.FC<SkillBoxProps> = ({ text, icon, width = "80%" }) => {
           left: "10%",
           top: 10,
           position: "absolute",
-          background: "#FA824C",
+          background: COLORS.Orange,
           borderRadius: 25,
           display: "flex",
           flexDirection: "row",

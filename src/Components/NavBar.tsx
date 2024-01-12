@@ -9,33 +9,13 @@ import {
 import { COLORS, FONTS } from "../GLOBAL";
 import { Link } from "react-router-dom";
 
-const styles = {
-  appBar: {
-    bgcolor: "main",
-  },
-  toolbar: {
-    justifyContent: "center",
-    gap: 4,
-    overflowX: "auto",
-    overflowY: "hidden",
-    maxHeight: 100,
-    whiteSpace: "nowrap",
-    "@media (max-width: 600px)": {
-      justifyContent: "flex-start",
-    },
-  },
-  button: {
-    textTransform: "none",
-  },
-};
-
 const NavBar = () => {
   const pages = [
     { name: "Home", path: "/" },
     { name: "About me", path: "/about" },
     { name: "Skills", path: "/skills" },
     { name: "Experiences", path: "/experiences" },
-    { name: "Resume", path: "/resume" },
+    { name: "Education", path: "/education" },
     { name: "Contact", path: "/contact" },
   ];
 
@@ -72,6 +52,26 @@ const NavBar = () => {
       </AppBar>
     </ThemeProvider>
   );
+};
+
+const styles = {
+  appBar: {
+    bgcolor: "main",
+  },
+  toolbar: {
+    justifyContent: "center",
+    gap: 4,
+    overflowX: "auto",
+    overflowY: "hidden",
+    maxHeight: 100,
+    whiteSpace: "nowrap",
+    "@media (max-width: 600px)": {
+      justifyContent: "flex-start",
+    },
+  },
+  button: {
+    textTransform: "none",
+  },
 };
 
 export default NavBar;

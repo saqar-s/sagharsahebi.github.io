@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/sagharsahebi.github.io/static/css/main.86bd2d64.css",
-    "main.js": "/sagharsahebi.github.io/static/js/main.1d3b0184.js",
+    "main.js": "/sagharsahebi.github.io/static/js/main.50106820.js",
     "static/js/787.7da95b79.chunk.js": "/sagharsahebi.github.io/static/js/787.7da95b79.chunk.js",
     "static/media/irespiteVideo.mp4": "/sagharsahebi.github.io/static/media/irespiteVideo.530fee9a1cc0a608509b.mp4",
     "static/media/robot.mp4": "/sagharsahebi.github.io/static/media/robot.1b790dced54478c04477.mp4",
@@ -24,11 +24,11 @@
     "static/media/robot.svg": "/sagharsahebi.github.io/static/media/robot.66ccd188ac649ea321bd551705f4dde0.svg",
     "index.html": "/sagharsahebi.github.io/index.html",
     "main.86bd2d64.css.map": "/sagharsahebi.github.io/static/css/main.86bd2d64.css.map",
-    "main.1d3b0184.js.map": "/sagharsahebi.github.io/static/js/main.1d3b0184.js.map",
+    "main.50106820.js.map": "/sagharsahebi.github.io/static/js/main.50106820.js.map",
     "787.7da95b79.chunk.js.map": "/sagharsahebi.github.io/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.86bd2d64.css",
-    "static/js/main.1d3b0184.js"
+    "static/js/main.50106820.js"
   ]
 }

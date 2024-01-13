@@ -209,7 +209,7 @@ const ExperienceDescription: React.FC<ExperienceDescriptionProps> = ({
     dashcam: (
       <>
         <li>
-          A python program analyzing teo dashcam videos to count the number of
+          A python program analyzing two dashcam videos to count the number of
           moving cars, the number of parked cars and the number of pedestrians
         </li>
         <li>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import FooterWave from "./FooterWave";
 import { Link, useLocation } from "react-router-dom";
+
 interface Styles {
   [key: string]: React.CSSProperties;
 }
@@ -65,7 +65,7 @@ const Footer = () => {
               <>
                 <Link
                   key={link.text}
-                  to={link.url} // Assuming paths are lowercase versions of link names
+                  to={link.url}
                   style={generateLinkStyle(link.text)}
                   onMouseEnter={() => handleMouseEnter(link.text)}
                   onMouseLeave={handleMouseLeave}

@@ -1,13 +1,14 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import NavBar from "./Components/NavBar";
-import HomeSrceen from "./Pages/HomeScreen";
+import { NavBar, Footer } from "./Components";
 import { COLORS } from "./GLOBAL";
-import AboutScreen from "./Pages/AboutScreen";
-import Footer from "./Components/Footer";
-import SkillsScreen from "./Pages/SkillsScreen";
-import ExperienceScreen from "./Pages/ExperienceScreen";
-import ContactScreen from "./Pages/ContactScreen";
-import EducationScreen from "./Pages/EducationScreen";
+import {
+  AboutScreen,
+  HomeScreen,
+  SkillsScreen,
+  ExperienceScreen,
+  ContactScreen,
+  EducationScreen,
+} from "./Pages";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         <NavBar />
         <div style={styles.pageContainer}>
           <Routes>
-            <Route path="/" element={<HomeSrceen />} />
+            <Route path="/" element={<HomeScreen />} />
             <Route path="/about" element={<AboutScreen />} />
             <Route path="/skills" element={<SkillsScreen />} />
             <Route path="/experiences" element={<ExperienceScreen />} />

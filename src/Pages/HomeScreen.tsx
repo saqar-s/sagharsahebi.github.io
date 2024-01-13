@@ -1,11 +1,8 @@
-import * as React from "react";
 import { COLORS, FONTS } from "../GLOBAL";
-import BoxContainer from "../Components/BoxContainer";
 import { Box, Typography, Button } from "@mui/material";
 import developerImage from "../Assets/girl-code.svg";
 import { useNavigate } from "react-router-dom";
-import LeftArrow from "../Components/LeftArrow";
-import RightArrow from "../Components/RightArrow";
+import { LeftArrow, RightArrow, BoxContainer } from "../Components";
 
 const HomeScreen = () => {
   const navigate = useNavigate();
@@ -20,14 +17,7 @@ const HomeScreen = () => {
 
   return (
     <>
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          margin: 10,
-        }}
-      >
+      <Box sx={styles.main}>
         <BoxContainer width="50vw" bgcolor={COLORS.DodgerBlue}>
           <Typography sx={styles.title}>
             Front-end developer <br />
@@ -112,6 +102,12 @@ const styles = {
   image: {
     height: "80%",
     padding: 16,
+  },
+  main: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+    margin: 10,
   },
 };
 

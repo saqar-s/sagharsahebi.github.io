@@ -1,7 +1,7 @@
 import { Grid, TextField, Button, Snackbar, Alert } from "@mui/material";
 import { motion, useAnimation } from "framer-motion";
 import React, { useEffect, useState } from "react";
-import BoxContainer from "../Components/BoxContainer";
+import { BoxContainer } from "../Components";
 import { COLORS } from "../GLOBAL";
 import { BsSendArrowUpFill } from "react-icons/bs";
 import emailjs from "@emailjs/browser";
@@ -371,18 +371,9 @@ const ContactScreen = () => {
       paddingX={4}
       justifyContent="center"
       alignItems="center"
-      //height={"100vh"}
     >
       <Grid item xs={6} sx={{ justifySelf: "center" }}>
-        <div
-          style={{
-            height: "600px",
-            alignItems: "center",
-            justifyContent: "center",
-            display: "flex",
-            flexDirection: "column",
-          }}
-        >
+        <div style={styles.container}>
           <motion.div animate={controls} initial={{ opacity: 1 }}>
             {SVGs[currentSvg]}
           </motion.div>
@@ -396,17 +387,9 @@ const ContactScreen = () => {
             label="Name"
             InputLabelProps={{ style: { color: COLORS.White } }}
             InputProps={{
-              style: {
-                color: "white",
-                border: "1px solid transparent",
-                borderRadius: 12,
-                backgroundColor: COLORS.DarkBackground,
-              },
+              style: styles.text,
             }}
-            sx={{
-              margin: 4,
-              width: "80%",
-            }}
+            sx={styles.textfield}
             value={name}
             onChange={handleName}
           />
@@ -415,17 +398,9 @@ const ContactScreen = () => {
             label="Email"
             InputLabelProps={{ style: { color: COLORS.White } }}
             InputProps={{
-              style: {
-                color: "white",
-                border: "1px solid transparent",
-                borderRadius: 12,
-                backgroundColor: COLORS.DarkBackground,
-              },
+              style: styles.text,
             }}
-            sx={{
-              margin: 4,
-              width: "80%",
-            }}
+            sx={styles.textfield}
             value={email}
             onChange={handleEmail}
           ></TextField>
@@ -434,17 +409,9 @@ const ContactScreen = () => {
             label="Subject"
             InputLabelProps={{ style: { color: COLORS.White } }}
             InputProps={{
-              style: {
-                color: "white",
-                border: "1px solid transparent",
-                borderRadius: 12,
-                backgroundColor: COLORS.DarkBackground,
-              },
+              style: styles.text,
             }}
-            sx={{
-              margin: 4,
-              width: "80%",
-            }}
+            sx={styles.textfield}
             value={subject}
             onChange={handleSubject}
           ></TextField>
@@ -455,17 +422,9 @@ const ContactScreen = () => {
             rows={10}
             InputLabelProps={{ style: { color: COLORS.White } }}
             InputProps={{
-              style: {
-                color: "white",
-                border: "1px solid transparent",
-                borderRadius: 12,
-                backgroundColor: COLORS.DarkBackground,
-              },
+              style: styles.text,
             }}
-            sx={{
-              margin: 4,
-              width: "80%",
-            }}
+            sx={styles.textfield}
             value={message}
             onChange={handleMessage}
           ></TextField>
@@ -499,6 +458,23 @@ const styles = {
     fontFamily: "JetBrains Mono",
     fontWeight: "700",
     marginTop: 20,
+  },
+  text: {
+    color: COLORS.White,
+    border: "1px solid transparent",
+    borderRadius: 12,
+    backgroundColor: COLORS.DarkBackground,
+  },
+  container: {
+    height: "600px",
+    alignItems: "center",
+    justifyContent: "center",
+    display: "flex",
+    flexDirection: "column" as const,
+  },
+  textfield: {
+    margin: 4,
+    width: "80%",
   },
 };
 export default ContactScreen;

@@ -1,7 +1,5 @@
-import * as React from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect } from "react";
-import { COLORS } from "../GLOBAL";
 
 const LeftArrow = () => {
   const paths = [

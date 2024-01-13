@@ -174,7 +174,6 @@ const ExperienceDescription: React.FC<ExperienceDescriptionProps> = ({
           </a>
         </li>
         <div style={{ color: "#ff0000" }}>
-          {" "}
           All rights belong to the iRespite team
         </div>
       </>
@@ -230,11 +229,10 @@ const ExperienceDescription: React.FC<ExperienceDescriptionProps> = ({
     server: (
       <>
         <li>
-          An implementation of a basic server and a client using sockets in
-          Python
+          Implementation of a basic server and client using sockets in Python
         </li>
         <li>
-          It creates a connection socket by client and server recieves the HTTP
+          It creates a connection socket by client and server receives the HTTP
           request and parses it
         </li>
         <li>
@@ -279,8 +277,6 @@ const ExperienceDescription: React.FC<ExperienceDescriptionProps> = ({
           A video of the final result of the robot making a mosaic art(double
           click on the video to see in full screen)
           <iframe
-            //width="100%"
-            //height="200%"
             src={robotVideo}
             title="robot Video"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

@@ -1,5 +1,4 @@
-import * as react from "react";
-import { COLORS, FONTS } from "../GLOBAL";
+import { COLORS } from "../GLOBAL";
 import { Typography } from "@mui/material";
 
 interface SkillBoxProps {
@@ -15,7 +14,6 @@ const SkillBox: React.FC<SkillBoxProps> = ({ text, icon, width = "80%" }) => {
         style={{
           width: "70%",
           aspectRatio: 2.5 / 1,
-          //height: "40%",
           position: "absolute",
           background: COLORS.DodgerBlue,
           borderRadius: 25,

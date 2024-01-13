@@ -1,13 +1,11 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import {
   Grid,
   Dialog,
   DialogContent,
   DialogTitle,
   DialogActions,
-  DialogProps,
   DialogContentText,
-  IconButton,
   Button,
 } from "@mui/material";
 import swiftconnect from "../Assets/swiftconnect.svg";
@@ -25,8 +23,7 @@ import swim from "../Assets/swimming.svg";
 import thinking from "../Assets/Thinking.svg";
 import BoxContainer from "../Components/BoxContainer";
 import { COLORS, FONTS } from "../GLOBAL";
-import ExperienceItem from "../Components/ExperienceItem";
-import ExperienceDescription from "../Components/ExperienceDescription";
+import { ExperienceItem, ExperienceDescription } from "../Components";
 import { MdClose } from "react-icons/md";
 
 interface ExperienceItem {

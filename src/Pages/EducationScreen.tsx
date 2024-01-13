@@ -1,5 +1,4 @@
-import BoxContainer from "../Components/BoxContainer";
-import CenterPopUp from "../Components/CenterPopUp";
+import { BoxContainer, CenterPopUp } from "../Components";
 import { COLORS, FONTS } from "../GLOBAL";
 import mcgill from "../Assets/Mcgill.svg";
 import { Button } from "@mui/material";
@@ -13,15 +12,7 @@ const EducationScreen = () => {
     setShowMore(!showMore);
   };
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyItems: "center",
-        marginTop: 54,
-      }}
-    >
+    <div style={styles.main}>
       <BoxContainer width="40%" bgcolor={COLORS.DodgerBlue}>
         <img
           src={mcgill}
@@ -34,7 +25,6 @@ const EducationScreen = () => {
           onClick={handleClick}
           sx={{
             background: COLORS.Orange,
-
             marginBottom: 2,
             "&:hover": { background: COLORS.Orange },
           }}
@@ -115,6 +105,13 @@ const styles = {
   spanText: {
     textAlign: "center" as const,
     margin: 8,
+  },
+  main: {
+    display: "flex",
+    flexDirection: "column" as const,
+    alignItems: "center",
+    justifyItems: "center",
+    marginTop: 54,
   },
 };
 export default EducationScreen;

@@ -1,6 +1,6 @@
 import * as React from "react";
-import { Grid, Box, Typography } from "@mui/material";
-import BoxContainer from "../Components/BoxContainer";
+import { Grid, Typography } from "@mui/material";
+import { BoxContainer } from "../Components/";
 import { COLORS, FONTS } from "../GLOBAL";
 import image1 from "../Assets/pic1.png";
 import image2 from "../Assets/pic2.png";
@@ -9,51 +9,13 @@ const AboutScreen = () => {
   return (
     <Grid container marginY={12} paddingLeft={4} rowGap={12}>
       <Grid item xs={6}>
-        <div
-          style={{
-            width: "90%",
-            height: "90%",
-            position: "relative",
-            alignContent: "center",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <div
-            style={{
-              width: "60%",
-              aspectRatio: 1 / 1,
-              position: "absolute",
-              background: COLORS.DodgerBlue,
-              borderRadius: "50%",
-            }}
-          />
-          <img
-            style={{
-              width: "60%",
-              aspectRatio: 1 / 1,
-              left: "30%",
-              position: "absolute",
-              borderRadius: "50%",
-            }}
-            src={image1}
-            alt="Your Alt Text"
-          />
+        <div style={styles.container}>
+          <div style={styles.circle} />
+          <img style={styles.image} src={image1} alt="Your Alt Text" />
         </div>
       </Grid>
       <Grid item xs={6}>
-        <div
-          style={{
-            width: "90%",
-            height: "90%",
-            position: "relative",
-            alignContent: "center",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+        <div style={styles.container}>
           <BoxContainer width="auto" height="auto" bgcolor={COLORS.Orange}>
             <Typography sx={styles.title}>Who am I?</Typography>
             <Typography sx={styles.description}>
@@ -73,17 +35,7 @@ const AboutScreen = () => {
         xs={6}
         sx={{ alignContent: "center", justifyContent: "center" }}
       >
-        <div
-          style={{
-            width: "90%",
-            height: "90%",
-            position: "relative",
-            alignContent: "center",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
+        <div style={styles.container}>
           <BoxContainer width="auto" height="auto" bgcolor={COLORS.Orange}>
             <Typography sx={styles.title}>Why Front-end? </Typography>
             <Typography sx={styles.description}>
@@ -102,38 +54,9 @@ const AboutScreen = () => {
         </div>
       </Grid>
       <Grid item xs={6}>
-        <div
-          style={{
-            width: "90%",
-            height: "90%",
-            position: "relative",
-            alignContent: "center",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <div
-            style={{
-              width: "60%",
-              aspectRatio: 1 / 1,
-              position: "absolute",
-              background: COLORS.DodgerBlue,
-
-              borderRadius: "50%",
-            }}
-          />
-          <img
-            style={{
-              width: "60%",
-              aspectRatio: 1 / 1,
-              left: "30%",
-              position: "absolute",
-              borderRadius: "50%",
-            }}
-            src={image2}
-            alt="Your Alt Text"
-          />
+        <div style={styles.container}>
+          <div style={styles.circle} />
+          <img style={styles.image} src={image2} alt="Your Alt Text" />
         </div>
       </Grid>
     </Grid>
@@ -158,6 +81,30 @@ const styles = {
     marginBottom: 4,
     lineHeight: "32px",
     wordWrap: "break-word",
+  },
+  container: {
+    width: "90%",
+    height: "90%",
+    position: "relative" as const,
+    alignContent: "center",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  image: {
+    width: "60%",
+    aspectRatio: 1 / 1,
+    left: "30%",
+    position: "absolute" as const,
+    borderRadius: "50%",
+  },
+  circle: {
+    width: "60%",
+    aspectRatio: 1 / 1,
+    position: "absolute" as const,
+    background: COLORS.DodgerBlue,
+
+    borderRadius: "50%",
   },
 };
 export default AboutScreen;

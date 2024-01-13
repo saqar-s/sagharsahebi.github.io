@@ -1,11 +1,7 @@
 import * as React from "react";
-import { Grid, Button, Box } from "@mui/material";
-import BoxContainer from "../Components/BoxContainer";
+import { Button } from "@mui/material";
+import BoxContainer from "./BoxContainer";
 import { COLORS } from "../GLOBAL";
-import ExperienceDescription from "./ExperienceDescription";
-import LeftPopUp from "./LeftPopUP";
-import CenterPopUp from "./CenterPopUp";
-import RightPopUp from "./RightPopUp";
 
 interface ExperienceItemProps {
   imageSrc: string;
@@ -32,12 +28,7 @@ const ExperienceItem: React.FC<ExperienceItemProps> = ({
           gap: 1,
         }}
       >
-        <img
-          src={imageSrc}
-          width="50%"
-          height="50%"
-          style={{ marginTop: 4, marginBottom: 2 }}
-        />
+        <img src={imageSrc} width="50%" height="50%" style={styles.image} />
         <div style={styles.title}>{title}</div>
         <div style={styles.date}>{date}</div>
         <Button onClick={onViewMoreClick} sx={styles.button}>
@@ -60,11 +51,14 @@ const styles = {
     fontWeight: "500",
   },
   button: {
-    //margin: 8,
     fontSize: "1vw",
     color: COLORS.Black,
     textTransform: "none",
     textDecoration: "underline",
+  },
+  image: {
+    marginTop: 4,
+    marginBottom: 2,
   },
 };
 export default ExperienceItem;

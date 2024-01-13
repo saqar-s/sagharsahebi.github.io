@@ -1,7 +1,5 @@
-import * as React from "react";
 import { Grid } from "@mui/material";
-import SkillBox from "../Components/SkillBox";
-import BoxContainer from "../Components/BoxContainer";
+import { SkillBox, BoxContainer } from "../Components";
 import { FaReact, FaFigma, FaPython, FaJava, FaDatabase } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { BiLogoTypescript } from "react-icons/bi";

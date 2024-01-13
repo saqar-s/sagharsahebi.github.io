@@ -50,9 +50,7 @@ const CenterPopUp: React.FC<ICC> = ({
   }, []);
 
   return (
-    <div
-      style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
-    >
+    <div style={styles.container}>
       <motion.svg
         width={width}
         height={height}
@@ -94,6 +92,14 @@ const CenterPopUp: React.FC<ICC> = ({
       </motion.div>
     </div>
   );
+};
+
+const styles = {
+  container: {
+    display: "flex",
+    flexDirection: "column" as const,
+    alignItems: "center",
+  },
 };
 
 export default CenterPopUp;

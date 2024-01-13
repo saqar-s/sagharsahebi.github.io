@@ -11,6 +11,7 @@ import {
   SiFirebase,
   SiPowerbi,
   SiAzuredevops,
+  SiFramer,
 } from "react-icons/si";
 import { COLORS } from "../GLOBAL";
 
@@ -47,6 +48,7 @@ const SkillsScreen = () => {
       { text: "Firebase", icon: <SiFirebase size="2.2vw" /> },
       { text: "Azure", icon: <SiAzuredevops size="2.2vw" /> },
       { text: "Postman", icon: <SiPostman size="2.2vw" /> },
+      { text: "FramerMotion", icon: <SiFramer size="2.2vw" /> },
     ],
     [{ text: "English" }, { text: "French" }, { text: "Farsi" }],
   ];

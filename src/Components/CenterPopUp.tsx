@@ -74,7 +74,7 @@ const CenterPopUp: React.FC<ICC> = ({
           cy="69.3103"
           rx="24.3871"
           ry="27.3103"
-          fill="#3A92FA"
+          fill={COLORS.DodgerBlue}
           initial={{ opacity: 0, scale: 0 }}
           animate={controls2}
         />
@@ -84,7 +84,7 @@ const CenterPopUp: React.FC<ICC> = ({
           cy="138.276"
           rx="31.5"
           ry="35.2759"
-          fill="#3A92FA"
+          fill={COLORS.DodgerBlue}
           initial={{ opacity: 0, scale: 0 }}
           animate={controls3}
         />

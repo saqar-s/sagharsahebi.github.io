@@ -383,7 +383,7 @@ const ContactScreen = () => {
             flexDirection: "column",
           }}
         >
-          <motion.div animate={controls} initial={{ opacity: 0 }}>
+          <motion.div animate={controls} initial={{ opacity: 1 }}>
             {SVGs[currentSvg]}
           </motion.div>
         </div>

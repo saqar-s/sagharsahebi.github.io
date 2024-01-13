@@ -1,10 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import FooterWave from "./FooterWave";
+import { Link, useLocation } from "react-router-dom";
 interface Styles {
   [key: string]: React.CSSProperties;
 }
 
 const Footer = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [location.pathname]);
+
   const [hoveredLink, setHoveredLink] = useState("");
 
   const handleMouseEnter = (link: string) => {
@@ -30,26 +37,44 @@ const Footer = () => {
     { text: "Github", url: "https://github.com/saqar-s" },
     { text: "Facebook", url: "https://www.facebook.com/saghar.sahebi.7" },
   ];
+
+  const navigationLinks = [
+    { text: "Home", url: "/" },
+    { text: "About", url: "/about" },
+    { text: "Skills", url: "/skills" },
+    { text: "Experience", url: "/experiences" },
+    { text: "Education", url: "/education" },
+    { text: "Contact", url: "/contact" },
+  ];
+
   return (
     <div style={{ ...styles.footerContainer }}>
       <div style={styles.footerContent}>
-        <div style={{ ...styles.container, ...{ width: 170, left: 92 } }}>
+        <div
+          style={{
+            ...styles.container,
+            ...{ width: 170, left: 92 },
+          }}
+        >
           <span style={{ ...styles.text, ...styles.textMain }}>
             Navigation
             <br />
           </span>
           <span style={{ ...styles.text, ...styles.textSub }}>
-            Home
-            <br />
-            About
-            <br />
-            Skills
-            <br />
-            Experience
-            <br />
-            Education
-            <br />
-            Contact
+            {navigationLinks.map((link) => (
+              <>
+                <Link
+                  key={link.text}
+                  to={link.url} // Assuming paths are lowercase versions of link names
+                  style={generateLinkStyle(link.text)}
+                  onMouseEnter={() => handleMouseEnter(link.text)}
+                  onMouseLeave={handleMouseLeave}
+                >
+                  {link.text}
+                </Link>
+                <br key={`br-${link}`} />
+              </>
+            ))}
           </span>
         </div>
         <div
@@ -93,6 +118,7 @@ const styles: Styles = {
     position: "relative",
     width: "100%",
     height: "100%",
+    marginBottom: 10,
   },
   footerContent: {
     width: "100%",

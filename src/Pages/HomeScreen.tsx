@@ -37,7 +37,6 @@ const HomeScreen = () => {
             }}
           >
             <LeftArrow />
-
             <RightArrow />
           </div>
           <div style={styles.container}>
@@ -56,9 +55,7 @@ const HomeScreen = () => {
               Experience
             </Button>
           </div>
-          {/* <div style={styles.imageContainer}> */}
           <img src={developerImage} alt="Developer" style={styles.image} />
-          {/* </div> */}
         </BoxContainer>
       </Box>
     </>
@@ -68,14 +65,14 @@ const HomeScreen = () => {
 const styles = {
   title: {
     marginTop: 4,
-    fontSize: 36,
+    fontSize: "2vw",
     fontFamily: FONTS.JetBrains,
     fontWeight: 800,
     color: COLORS.White,
     textAlign: "center",
   },
   description: {
-    fontSize: 16,
+    fontSize: "1vw",
     fontFamily: FONTS.JetBrains,
     fontWeight: 400,
     color: COLORS.White,
@@ -98,9 +95,10 @@ const styles = {
     margin: "10px 50px",
     padding: "6px 28px",
     textTransform: "none",
+    "&:hover": { background: COLORS.Orange },
   },
   image: {
-    height: "80%",
+    height: "75%",
     padding: 16,
   },
   main: {

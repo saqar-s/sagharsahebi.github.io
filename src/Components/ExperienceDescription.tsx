@@ -17,7 +17,7 @@ const ExperienceDescription: React.FC<ExperienceDescriptionProps> = ({
           TypeScript (TS) and React.
         </li>
         <li>
-          Proficient in debugging, addressing issues, and ensuring optimal code
+          Contributed to debugging, addressing issues, and ensuring optimal code
           performance.
         </li>
         <li>
@@ -33,75 +33,63 @@ const ExperienceDescription: React.FC<ExperienceDescriptionProps> = ({
           SDK, and Axios calls.
         </li>
         <li>
-          Expertise in facilitating communication and data exchange between
-          server and user interface.
+          Worked on facilitating communication and data exchange between server
+          and user interface.
         </li>
       </>
     ),
     ubisoft: (
       <>
         <li>
-          Creating interactive user interfaces for web applications using React.
+          Created interactive user interfaces for web applications using
+          Javascript and React.
         </li>
         <li>
-          Implementing responsive design to ensure compatibility across various
+          Implemented responsive design to ensure compatibility across various
           devices.
         </li>
         <li>
-          Establishing seamless communication between the backend and frontend
-          of applications.
+          Established seamless communication between the backend and frontend of
+          applications.
         </li>
         <li>
-          Utilizing Redux for state management to enhance the efficiency of data
+          Utilized Redux for state management to enhance the efficiency of data
           flow.
         </li>
         <li>
-          Crafting visually appealing and user-friendly interfaces using design
+          Crafted visually appealing and user-friendly interfaces using design
           tools like Miro and Figma.
         </li>
         <li>
-          Collaborating with design teams to translate concepts into engaging
+          Collaborated with design teams to translate concepts into engaging
           user experiences.
         </li>
         <li>
-          Conducting thorough testing of APIs to ensure reliability and
+          Conducted thorough testing of APIs to ensure reliability and
           functionality.
         </li>
         <li>
-          Writing test scripts and automating API testing processes for
-          efficiency.
-        </li>
-        <li>
-          Developing server-side logic and applications using the Go programming
+          Developed server-side logic and applications using the Go programming
           language.
-        </li>
-        <li>
-          Implementing robust and scalable backend solutions to support the
-          overall system architecture.
         </li>
       </>
     ),
     giro: (
       <>
         <li>
-          Proficient in creating complex queries to extract and analyze data in
-          Power BI.
+          Gained proficiency in creating complex queries to extract and analyze
+          data in Power BI.
         </li>
         <li>
           Skilled in designing interactive and insightful dashboards for
           effective data visualization.
         </li>
         <li>
-          Experience in seamlessly integrating databases using SQL (Structured
-          Query Language).
+          Worked on integrating databases using SQL (Structured Query Language).
         </li>
         <li>
-          Capable of optimizing database performance and ensuring efficient data
-          retrieval.
-        </li>
-        <li>
-          Proficient in writing and modifying scripts using VBS to automate
-          tasks and enhance functionality.
+          Wrote and modified scripts using VBS to automate tasks and enhance
+          functionality.
         </li>
         <li>
           Skilled in troubleshooting and debugging VBS scripts to ensure smooth
